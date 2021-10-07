@@ -10,7 +10,7 @@ class RickAndMortyRepository(private val service: RickAndMortyService) : RickAnd
     override suspend fun listCharacterAsync() =
         withContext(Dispatchers.IO) {
             async {
-                service.listCharactersAsync().await().results.map {
+                service.fetchCharactersAsync().await().results.map {
                     Info(it.name, it.image)
                 }
             }

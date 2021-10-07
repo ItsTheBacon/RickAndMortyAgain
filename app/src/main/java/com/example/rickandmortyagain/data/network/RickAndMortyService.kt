@@ -6,6 +6,6 @@ import retrofit2.http.GET
 
 interface RickAndMortyService {
     @GET("character")
-    fun listCharactersAsync(): Deferred<RickAndMortyDTO>
+    fun fetchCharactersAsync(): Deferred<RickAndMortyDTO>
 
 }
