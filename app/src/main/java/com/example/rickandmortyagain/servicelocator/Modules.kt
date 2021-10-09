@@ -1,4 +1,4 @@
-package com.example.rickandmortyagain.di
+package com.example.rickandmortyagain.servicelocator
 
 import com.example.rickandmortyagain.data.network.RickAndMortyService
 import com.example.rickandmortyagain.data.network.retrofit.initRetrofit

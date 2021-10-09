@@ -1,7 +1,7 @@
 package com.example.rickandmortyagain
 
 import android.app.Application
-import com.example.rickandmortyagain.di.rickMortyModules
+import com.example.rickandmortyagain.servicelocator.rickMortyModules
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
 

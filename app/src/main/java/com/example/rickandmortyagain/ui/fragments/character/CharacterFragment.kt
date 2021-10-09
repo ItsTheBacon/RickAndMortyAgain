@@ -20,7 +20,7 @@ class CharacterFragment :
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentCharacterBinding.inflate(inflater, container, false)
         setUpRequests()
         return binding.root
@@ -29,7 +29,6 @@ class CharacterFragment :
 
     private fun setUpRequests() {
         viewModel.successLiveData.observe(viewLifecycleOwner, {
-            Log.e("anime", "setUpRequests: $it")
             binding.rvCharacter.adapter = CharactersAdapter(it)
             Log.e("anime", "setupRequests: $it")
         })
